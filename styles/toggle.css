@@ -1,0 +1,47 @@
+.containerToggle {
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    fill: #213547;
+    margin-left: 15px;
+  }
+  
+  .containerToggle .chevron-down {
+    animation: keyframes-return .5s;
+  }
+  
+  .containerToggle input:checked ~ .chevron-down {
+    animation: keyframes-rotate .5s;
+    transform: rotate(180deg);
+  }
+  
+  .containerToggle input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  @keyframes keyframes-rotate {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: rotate(-180deg);
+    }
+  }
+  
+  @keyframes keyframes-return {
+    0% {
+      transform: rotate(-180deg);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  

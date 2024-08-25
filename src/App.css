@@ -1,0 +1,122 @@
+:root {
+  --main-color: royalblue;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0;
+  gap: 20px;
+}
+
+#root {
+  padding: 2rem;
+  width: 100%;
+}
+
+.container {
+  gap: 10px;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--main-color);
+}
+
+button {
+  border: 2px solid var(--main-color);
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 30px;
+  min-width: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: bolder;
+  color: var(--main-color);
+}
+
+button[type="submit"] {
+  padding: 12px;
+  max-height: max-content;
+}
+
+button:hover {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bolder;
+}
+
+button:focus {
+  outline: none;
+}
+
+.download > button {
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+input {
+  margin: 5px;
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  padding: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus{
+  border-bottom: 2px solid blue;
+  outline: none;
+}
+
+.entry {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  border-radius: 16px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-height: 40px;
+}
+
+.educational-experience, .practical-experience, .general-info, .skills {
+  padding: 10px;
+  width: 350px;
+}
+
+@media (max-width : 1015px) {
+  .body {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+

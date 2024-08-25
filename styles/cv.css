@@ -1,0 +1,57 @@
+.cvs {
+    padding: 0px;
+    width: 55vw; 
+    aspect-ratio: 210 / 297;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 0.2px solid rgb(194, 194, 194);
+}
+
+.name, h5 {
+    margin: 5% 0% 0% 0%;
+}
+
+.general {
+    color: white;
+    background-color: #213547;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+.mail, .phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}   
+
+img {
+    width: 2vw;
+}
+
+p , ul, li, h5 {
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+.general > h2 {
+    font-size: 3vw;
+}
+
+li, p {
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.cv {
+    margin: 5%;
+    max-width: 90%;
+}
